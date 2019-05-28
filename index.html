@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="Main.css" />
     <title>eind1</title>
     <script src="script.js"></script>
-    <script src="jquery-3.4.1.min.js"></script>
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
   </head>
   <body>
     <div id="container">
-      <div id="wrapper">
-        <h2 id="title">
-          <!-- hier staat de title -->
-          Naam invoeren:
-          <div><input type="text" id="textInvoegen" /></div>
-          <div><input type="submit" value="Submit" id="submit" /></div>
-        </h2>
-        <div id="first">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          exercitationem soluta asperiores deleniti neque modi alias quidem
-          nobis mollitia officia atque libero totam consequuntur unde
-          necessitatibus earum, repudiandae possimus enim.
+      <h2 id="title">
+        <!-- hier staat de title -->
+        Naam invoeren:
+
+        <div>
+          <input
+            type="submit"
+            onclick="addPromt()"
+            value="Add name"
+            id="submit"
+          />
         </div>
+      </h2>
+      <div id="wrapper">
+        <div id="first"></div>
         <!--eind first -->
 
         <div id="buttonWrapper">
@@ -32,12 +34,7 @@
         </div>
         <!-- eind buttonWrapper -->
 
-        <div id="second">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-          consequuntur, officia nobis, similique vel suscipit facere distinctio
-          sapiente tenetur illo quisquam reiciendis architecto. Ab, omnis odio.
-          Adipisci provident non iusto.
-        </div>
+        <div id="second"></div>
         <!--eind second-->
       </div>
       <!--eind wrapper-->

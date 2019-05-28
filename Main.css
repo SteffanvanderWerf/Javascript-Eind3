@@ -9,6 +9,7 @@
 }
 
 #title {
+  text-align: center;
   border: 1px solid black;
   width: 80%;
   margin: 0 auto;
@@ -17,14 +18,18 @@
 #first {
   border: 1px solid black;
   display: inline-block;
+  float: left;
   width: 30%;
-  margin: 3%;
+  margin: 3% 3% 3% 10%;
+  min-height: 200px;
+  max-width: 30%;
 }
 
 #buttonWrapper {
   display: inline-block;
   vertical-align: top;
   margin: 3% 0;
+  max-width: 100px;
 }
 
 .button {
@@ -35,6 +40,13 @@
 #second {
   border: 1px solid black;
   display: inline-block;
+  float: right;
   width: 30%;
-  margin: 3%;
+  margin: 3% 10% 3% 3%;
+  min-height: 200px;
+  max-width: 30%;
+}
+
+ul {
+  list-style-type: none;
 }
