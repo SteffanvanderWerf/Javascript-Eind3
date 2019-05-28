@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+
+#first {
+  border: 3px black solid;
+  width: 250px;
+  height: 500px;
+  float: left;
+  overflow: hidden;
+}
+
+#second {
+  border: 3px black solid;
+  width: 250px;
+  height: 500px;
+  float: right;
+  overflow: hidden;
+}
