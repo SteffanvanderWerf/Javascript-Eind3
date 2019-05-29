@@ -14,3 +14,15 @@ function addPromt() {
 function addWord(value) {
   text += value + "<br>";
 }
+
+function moveRight() {
+  document.getElementById("first").innerHTML = "";
+
+  document.getElementById("second").innerHTML = text;
+}
+
+function moveLeft() {
+  document.getElementById("first").innerHTML = text;
+
+  document.getElementById("second").innerHTML = "";
+}

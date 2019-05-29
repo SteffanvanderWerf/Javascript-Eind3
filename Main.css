@@ -23,6 +23,7 @@
   margin: 3% 3% 3% 10%;
   min-height: 200px;
   max-width: 30%;
+  overflow-y: scroll;
 }
 
 #buttonWrapper {
@@ -45,6 +46,7 @@
   margin: 3% 10% 3% 3%;
   min-height: 200px;
   max-width: 30%;
+  overflow-y: scroll;
 }
 
 ul {
