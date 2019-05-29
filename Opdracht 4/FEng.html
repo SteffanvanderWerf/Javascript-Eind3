@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="opdracht4.css">
+        <meta charset="utf-8">
+        <title>FORM ENG</title>
+    </head>
+    <body id="form-body-eng">
+
+            <div class="button-container">
+                <button id="male">MALE</button>
+                <button id="female">FEMALE</button>
+            </div>
+
+            <form id="form-eng" action="result.eng.php">
+                <h1>Please fill out the form!</h1>
+                <label for="salutation">↓ Salutation ↓</label>
+                <select id="salutation">
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                </select>
+                <input id="name" type="text" name="name" regex="^[a-z ]+$" placeholder="Name">
+                <input id="address" type="text" name="address" regex="^[a-z ]+ [0-9]+$" placeholder="Address">
+                <input id="city" type="text" name="city" regex="^[a-z-]+$" placeholder="City">
+                <input id="postcode" type="text" name="postcode" regex="^[0-9]{4}[a-z]{2}$" placeholder="Zip-Code">
+                <input id="birthday" type="text" name="birthday" regex="^[0-9]{2}-[0-9]{2}-[0-9]{4}$" placeholder="Date Of Birth dd/mm/yyyy">
+                <input id="nationality" type="text" name="nationality" regex="^[a-z ]+$" placeholder="Nationality">
+                <input id="profession" type="text" name="profession" regex="^[a-z ]+$" placeholder="Profession">
+                <textarea name="comments" rows="100%" cols="100%" placeholder="comments"></textarea>
+                <input type="submit" name="submit">
+            </form>
+    </body>
+    <script src="jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+</html>
