@@ -16,11 +16,18 @@
 
     <form action="resultEng.php" method="POST">
       <h1>Fill out this form, please.</h1>
+      <label for="salutation">Salutation:</label>
+      <br />
+      <select id="salutation">
+        <option>Sir</option>
+        <option>Madame</option>
+      </select>
+      <br />
 
       <input
-        id="name"
+        id="naam"
         type="text"
-        name="Naam"
+        name="namen"
         regex="^[a-z ]+$"
         placeholder="Name"
       />

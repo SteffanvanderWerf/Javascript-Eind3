@@ -5,6 +5,14 @@
   font-family: arial;
 }
 
+#body-php {
+  text-align: center;
+  position: relative;
+  top: 200px;
+  color: white;
+  background-color: black;
+  font-size: 25px;
+}
 #textNl {
   position: relative;
   float: left;
@@ -53,4 +61,17 @@ textarea,
 input {
   height: 7.5vh;
   width: 50vw;
+}
+
+form label {
+  text-align: center;
+  font-size: 25px;
+}
+
+.php {
+  background-color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-family: itlic;
 }
