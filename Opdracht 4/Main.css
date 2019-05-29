@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+  background-color: grey;
+}
+
+#textNl {
+  position: relative;
+  float: left;
+  font-size: 75px;
+  color: black;
+  font-family: italic;
+}
+
+#textEng {
+  position: relative;
+  float: right;
+  font-size: 75px;
+  color: black;
+  font-family: italic;
+}
+
+#btn-con > button {
+  position: relative;
+  font-size: 250px;
+  width: 100%;
+  display: block;
+  padding: 1px;
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 1px;
+  color: white;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+  background-color: yellow;
+  border: 1px;
+}
+#index-body h1 {
+  text-align: center;
+}
