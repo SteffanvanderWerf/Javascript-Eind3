@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Main.css" />
+    <script src="jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="	" />
+    <title>Form NL</title>
+  </head>
+  <body>
+    <div id="btn-con">
+      <button>Man</button>
+      <button>Vrouw</button>
+    </div>
+
+    <form action="resultNL.php" method="POST">
+      <h1>vul dit formelier in!</h1>
+      <label for="uitkomst"> Aanhef</label>
+      <select id="uitkomst">
+        <option> Meneer</option>
+        <option>Mevrouw</option>
+      </select>
+
+      <input
+        id="name"
+        type="text"
+        name="Naam"
+        regex="^[a-z ]+$"
+        placeholder="Naam"
+      />
+
+      <input
+        id="adres"
+        type="text"
+        name="adres"
+        regex="^[a-z ]+ [0-9]+$"
+        placeholder="Adres"
+      />
+      <input
+        id="stad"
+        type="text"
+        name="stad"
+        regex="^[a-z-]+$"
+        placeholder="Woonplaats"
+      />
+      <input
+        id="postcode"
+        type="text"
+        name="postcode"
+        regex="^[0-9]{4}[a-z]{2}$"
+        placeholder="Postcode"
+      />
+      <input
+        id="verjaardag"
+        type="text"
+        name="verjaardag"
+        regex="^[0-9]{2}-[0-9]{2}-[0-9]{4}$"
+        placeholder="Geboortedatum dd/mm/yyyy"
+      />
+      <input
+        id="nationaliteit"
+        type="text"
+        name="nationaliteit"
+        regex="^[a-z]+$"
+        placeholder="Nationaliteit"
+      />
+      <input
+        id="beroep"
+        type="text"
+        name="beroep"
+        regex="^[a-z]+$"
+        placeholder="Beroep"
+      />
+      <textarea
+        name="command"
+        rows="100%"
+        cols="100%"
+        placeholder="Commentaar"
+      ></textarea>
+    </form>
+  </body>
+</html>
