@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: arial;
-  background-color: grey;
+  background-color: white;
 }
 
 #textNl {
@@ -42,4 +42,16 @@ button a {
 }
 #index-body h1 {
   text-align: center;
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  margin: 5em auto;
+}
+
+textarea,
+input {
+  height: 7.5vh;
+  width: 50vw;
 }

@@ -2,8 +2,6 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="Main.css" />
-    <script src="jquery-3.4.1.min.js" charset="utf-8"></script>
-    <script src="script.js" charset="utf-8"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="	" />
@@ -11,18 +9,12 @@
   </head>
   <body>
     <div id="btn-con">
-      <button>Man</button>
-      <button>Vrouw</button>
+      <button id="man">Man</button>
+      <button id="vrouw">Vrouw</button>
     </div>
 
     <form action="resultNL.php" method="POST">
-      <h1>vul dit formelier in!</h1>
-      <label for="uitkomst"> Aanhef</label>
-      <select id="uitkomst">
-        <option> Meneer</option>
-        <option>Mevrouw</option>
-      </select>
-
+      <h1>Vul dit formelier in alstublieft!</h1>
       <input
         id="name"
         type="text"
@@ -30,7 +22,7 @@
         regex="^[a-z ]+$"
         placeholder="Naam"
       />
-
+      <br />
       <input
         id="adres"
         type="text"
@@ -38,6 +30,7 @@
         regex="^[a-z ]+ [0-9]+$"
         placeholder="Adres"
       />
+      <br />
       <input
         id="stad"
         type="text"
@@ -45,6 +38,7 @@
         regex="^[a-z-]+$"
         placeholder="Woonplaats"
       />
+      <br />
       <input
         id="postcode"
         type="text"
@@ -52,6 +46,7 @@
         regex="^[0-9]{4}[a-z]{2}$"
         placeholder="Postcode"
       />
+      <br />
       <input
         id="verjaardag"
         type="text"
@@ -59,6 +54,7 @@
         regex="^[0-9]{2}-[0-9]{2}-[0-9]{4}$"
         placeholder="Geboortedatum dd/mm/yyyy"
       />
+      <br />
       <input
         id="nationaliteit"
         type="text"
@@ -66,6 +62,7 @@
         regex="^[a-z]+$"
         placeholder="Nationaliteit"
       />
+      <br />
       <input
         id="beroep"
         type="text"
@@ -73,12 +70,12 @@
         regex="^[a-z]+$"
         placeholder="Beroep"
       />
-      <textarea
-        name="command"
-        rows="100%"
-        cols="100%"
-        placeholder="Commentaar"
-      ></textarea>
+      <br />
+      <textarea name="command" placeholder="Commentaar"></textarea>
+      <br />
+      <button type="submit" name="submit">Verstuur</button>
     </form>
   </body>
+  <script src="jquery-3.4.1.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
 </html>
